@@ -17,6 +17,6 @@ if (!defined('TYPO3_MODE')) {
 	)
 );
 
-$GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['messageList'] = 'EXT:'.$_EXTKEY.'/class.eid_message_list.php';
+//$GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['messageList'] = 'EXT:'.$_EXTKEY.'/class.eid_message_list.php';
 $GLOBALS['TY.$_EXTKEY.'/class.eid_message_create.php';PO3_CONF_VARS']['FE']['eID_include']['messageCreate'] = 'EXT:';
 
