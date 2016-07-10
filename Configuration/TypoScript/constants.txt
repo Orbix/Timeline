@@ -1,0 +1,15 @@
+
+plugin.tx_mytimeline_mytimeline {
+	view {
+		# cat=plugin.tx_mytimeline_mytimeline/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:mytimeline/Resources/Private/Templates/
+		# cat=plugin.tx_mytimeline_mytimeline/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:mytimeline/Resources/Private/Partials/
+		# cat=plugin.tx_mytimeline_mytimeline/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:mytimeline/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_mytimeline_mytimeline//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

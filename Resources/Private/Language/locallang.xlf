@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-06T20:01:20Z" product-name="mytimeline">
+		<header/>
+		<body>
+			<trans-unit id="tx_mytimeline_domain_model_timeline">
+				<source>Timeline</source>
+			</trans-unit>
+			<trans-unit id="tx_mytimeline_domain_model_timeline.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_mytimeline_domain_model_timeline.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_mytimeline_domain_model_timeline.entrydate">
+				<source>Entrydate</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,13 @@
+<label for="title">
+	<f:translate key="tx_mytimeline_domain_model_timeline.title" />
+</label><br />
+<f:form.textfield property="title" /><br />
+
+<label for="message">
+	<f:translate key="tx_mytimeline_domain_model_timeline.message" />
+</label><br />
+	<f:form.textfield property="message" /><br />
+<label for="entrydate">
+	<f:translate key="tx_mytimeline_domain_model_timeline.entrydate" />
+</label><br />
+	<f:form.textfield property="entrydate"  value="{timeline.entrydate->f:format.date(format: 'd/m/Y')}" /><br />
