@@ -80,6 +80,7 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function showAction(\Orbix\Mytimeline\Domain\Model\Timeline $timeline)
     {
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($timeline);
         $this->view->assign('timeline', $timeline);
     }
     
