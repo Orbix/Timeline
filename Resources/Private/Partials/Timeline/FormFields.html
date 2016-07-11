@@ -6,7 +6,17 @@
 <label for="categories">
 	<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 </label><br />
-<f:form.select id="categories" options="{timeline.categories}" optionValueField="uid" optionLabelField="title" property="categories" />
+
+<f:for each="{timeline.categories}" as="selectedCategory" iteration="iterator">
+	<f:if condition="{iterator.isLast}">
+		<f:then>
+			{selectedCategory.title}
+		</f:then>
+		<f:else>
+			{selectedCategory.title},
+		</f:else>
+	</f:if>
+</f:for>
 
 <label for="message">
 	<f:translate key="tx_mytimeline_domain_model_timeline.message" />
