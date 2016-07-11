@@ -8,6 +8,7 @@
 </label><br />
 
 <f:for each="{timeline.categories}" as="selectedCategory" iteration="iterator">
+	{selectedCategory}
 	<f:if condition="{iterator.isLast}">
 		<f:then>
 			{selectedCategory.title}
