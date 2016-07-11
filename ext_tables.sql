@@ -6,9 +6,10 @@ CREATE TABLE tx_mytimeline_domain_model_timeline (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-  title varchar(255) DEFAULT '' NOT NULL,
+	title varchar(255) DEFAULT '' NOT NULL,
 	message varchar(255) DEFAULT '' NOT NULL,
 	entrydate int(11) DEFAULT '0' NOT NULL,
+	categories int(11) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -38,3 +39,18 @@ CREATE TABLE tx_mytimeline_domain_model_timeline (
  KEY language (l10n_parent,sys_language_uid)
 
 );
+
+#
+# Table structure for table 'sys_category_record_mm'
+#
+CREATE TABLE sys_category_record_mm (
+	uid_local int(11) unsigned DEFAULT '0' NOT NULL,
+	uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting_foreign int(11) unsigned DEFAULT '0' NOT NULL,
+
+	KEY uid_local (uid_local),
+	KEY uid_foreign (uid_foreign)
+);
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
