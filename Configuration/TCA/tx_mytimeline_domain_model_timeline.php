@@ -150,10 +150,8 @@ return array(
 			'label' => 'LLL:EXT:mytimeline/Resources/Private/Language/locallang_db.xlf:tx_mytimeline_domain_model_timeline.categories',
 			'config' => array(
 				'type' => 'input',
-				'size' => 7,
-				'eval' => 'date',
-				'checkbox' => 1,
-				'default' => time()
+				'size' => 30,
+				'eval' => 'trim'
 			),
 		),
 	),
