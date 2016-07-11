@@ -7,6 +7,8 @@
 	<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 </label><br />
 
+<f:debug title="Catégories">{timeline.categories}</f:debug>
+
 <f:for each="{timeline.categories}" as="selectedCategory" iteration="iterator">
 	{selectedCategory}
 	<f:if condition="{iterator.isLast}">
