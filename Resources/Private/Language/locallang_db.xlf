@@ -7,7 +7,7 @@
 				<source>Timeline</source>
 			</trans-unit>
 			<trans-unit id="tx_mytimeline_domain_model_timeline.title">
-				<source>Title2</source>
+				<source>Title</source>
 			</trans-unit>
 			<trans-unit id="tx_mytimeline_domain_model_timeline.message">
 				<source>Message</source>
