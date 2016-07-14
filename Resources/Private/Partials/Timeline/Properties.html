@@ -5,7 +5,7 @@
 			<f:translate key="tx_mytimeline_domain_model_timeline.title" />
 		</td>
 		<td>
-			{timeline.title}
+		{timeline.title}
 		</td>
 	</tr>
 	<tr>
@@ -13,7 +13,9 @@
 			<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 		</td>
 		<td>
-			<f:debug>{timeline}</f:debug>
+			<f:for each="{timeline.categories}" as="category">
+				{category.title}
+			</f:for>
 		</td>
 	</tr>
 	<tr>

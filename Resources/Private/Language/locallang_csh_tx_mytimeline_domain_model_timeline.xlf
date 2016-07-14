@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-06T20:01:20Z" product-name="mytimeline">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-11T23:14:45Z" product-name="mytimeline">
 		<header/>
 		<body>
 			<trans-unit id="title.description">
@@ -11,6 +11,9 @@
 			</trans-unit>
 			<trans-unit id="entrydate.description">
 				<source>Entry date</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>categories</source>
 			</trans-unit>
 		</body>
 	</file>

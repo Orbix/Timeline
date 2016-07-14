@@ -20,7 +20,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:render partial="FormErrors" arguments="{object:Timeline}" />
 
 <f:form action="create"  name="newTimeline" object="{newTimeline}">
-<f:render partial="Timeline/FormFields" />
+<f:render partial="Timeline/FormFields" arguments="{_all}" />
 	<f:form.submit value="Create new" />
 </f:form>
 </f:section>

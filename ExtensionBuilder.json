@@ -36,6 +36,16 @@
                         {
                             "allowedFileTypes": "",
                             "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "261078660312"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
                             "propertyDescription": "message",
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
@@ -56,7 +66,18 @@
                     ]
                 },
                 "relationGroup": {
-                    "relations": []
+                    "relations": [
+                        {
+                            "foreignRelationClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\Category",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "categories",
+                            "relationType": "manyToMany",
+                            "relationWire": "",
+                            "uid": "217038561033"
+                        }
+                    ]
                 }
             }
         }
@@ -96,7 +117,7 @@
     },
     "wires": [],
     "log": {
-        "last_modified": "2016-07-06 08:01",
+        "last_modified": "2016-07-11 11:14",
         "extension_builder_version": "7.6.0",
         "be_user": " (1)"
     }

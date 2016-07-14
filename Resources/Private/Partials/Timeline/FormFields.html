@@ -1,26 +1,16 @@
+
 <label for="title">
 	<f:translate key="tx_mytimeline_domain_model_timeline.title" />
 </label><br />
-<f:form.textfield property="title" /><br />
+	<f:form.textfield property="title" /><br />
 
 <label for="categories">
 	<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 </label><br />
-
-<f:debug title="Catégories">{timeline.categories}</f:debug>
-
-<f:for each="{timeline.categories}" as="selectedCategory" iteration="iterator">
-	{selectedCategory}
-	<f:if condition="{iterator.isLast}">
-		<f:then>
-			{selectedCategory.title}
-		</f:then>
-		<f:else>
-			{selectedCategory.title},
-		</f:else>
-	</f:if>
-</f:for>
-
+	<f:form.select name="categories" options="{categories}" optionValueField="uid" optionLabelField="title" />
+	
+	<f:debug>{montest}</f:debug>
+	
 <label for="message">
 	<f:translate key="tx_mytimeline_domain_model_timeline.message" />
 </label><br />
@@ -28,4 +18,4 @@
 <label for="entrydate">
 	<f:translate key="tx_mytimeline_domain_model_timeline.entrydate" />
 </label><br />
-	<f:form.textfield property="entrydate"  value="{timeline.entrydate->f:format.date(format: 'd/m/Y')}" /><br />
+	<f:form.textfield property="entrydate"  value="{timeline.entrydate->f:format.date()}" /><br />

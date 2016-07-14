@@ -53,6 +53,31 @@ class TimelineTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	/**
 	 * @test
 	 */
+	public function getTitleReturnsInitialValueForString()
+	{
+		$this->assertSame(
+			'',
+			$this->subject->getTitle()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setTitleForStringSetsTitle()
+	{
+		$this->subject->setTitle('Conceived at T3CON10');
+
+		$this->assertAttributeEquals(
+			'Conceived at T3CON10',
+			'title',
+			$this->subject
+		);
+	}
+
+	/**
+	 * @test
+	 */
 	public function getMessageReturnsInitialValueForString()
 	{
 		$this->assertSame(
@@ -99,5 +124,61 @@ class TimelineTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 			'entrydate',
 			$this->subject
 		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function getCategoriesReturnsInitialValueForCategory()
+	{
+		$newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+		$this->assertEquals(
+			$newObjectStorage,
+			$this->subject->getCategories()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setCategoriesForObjectStorageContainingCategorySetsCategories()
+	{
+		$category = new \TYPO3\CMS\Extbase\Domain\Model\Category();
+		$objectStorageHoldingExactlyOneCategories = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+		$objectStorageHoldingExactlyOneCategories->attach($category);
+		$this->subject->setCategories($objectStorageHoldingExactlyOneCategories);
+
+		$this->assertAttributeEquals(
+			$objectStorageHoldingExactlyOneCategories,
+			'categories',
+			$this->subject
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function addCategoryToObjectStorageHoldingCategories()
+	{
+		$category = new \TYPO3\CMS\Extbase\Domain\Model\Category();
+		$categoriesObjectStorageMock = $this->getMock('TYPO3\\CMS\\Extbase\\Persistence\\ObjectStorage', array('attach'), array(), '', FALSE);
+		$categoriesObjectStorageMock->expects($this->once())->method('attach')->with($this->equalTo($category));
+		$this->inject($this->subject, 'categories', $categoriesObjectStorageMock);
+
+		$this->subject->addCategory($category);
+	}
+
+	/**
+	 * @test
+	 */
+	public function removeCategoryFromObjectStorageHoldingCategories()
+	{
+		$category = new \TYPO3\CMS\Extbase\Domain\Model\Category();
+		$categoriesObjectStorageMock = $this->getMock('TYPO3\\CMS\\Extbase\\Persistence\\ObjectStorage', array('detach'), array(), '', FALSE);
+		$categoriesObjectStorageMock->expects($this->once())->method('detach')->with($this->equalTo($category));
+		$this->inject($this->subject, 'categories', $categoriesObjectStorageMock);
+
+		$this->subject->removeCategory($category);
+
 	}
 }

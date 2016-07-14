@@ -1,30 +1,30 @@
 <?php
 namespace Orbix\Mytimeline\Domain\Model;
 
-    /***************************************************************
-     *
-     *  Copyright notice
-     *
-     *  (c) 2016
-     *
-     *  All rights reserved
-     *
-     *  This script is part of the TYPO3 project. The TYPO3 project is
-     *  free software; you can redistribute it and/or modify
-     *  it under the terms of the GNU General Public License as published by
-     *  the Free Software Foundation; either version 3 of the License, or
-     *  (at your option) any later version.
-     *
-     *  The GNU General Public License can be found at
-     *  http://www.gnu.org/copyleft/gpl.html.
-     *
-     *  This script is distributed in the hope that it will be useful,
-     *  but WITHOUT ANY WARRANTY; without even the implied warranty of
-     *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-     *  GNU General Public License for more details.
-     *
-     *  This copyright notice MUST APPEAR in all copies of the script!
-     ***************************************************************/
+/***************************************************************
+ *
+ *  Copyright notice
+ *
+ *  (c) 2016
+ *
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
 
 /**
  * Timeline
@@ -38,21 +38,21 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $title = '';
-
+    
     /**
      * message
      *
      * @var string
      */
     protected $message = '';
-
+    
     /**
      * Entry date
      *
      * @var \DateTime
      */
     protected $entrydate = null;
-
+    
     /**
      * categories
      *
@@ -60,7 +60,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @cascade remove
      */
     protected $categories = null;
-
+    
     /**
      * Returns the title
      *
@@ -70,7 +70,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->title;
     }
-
+    
     /**
      * Sets the title
      *
@@ -81,7 +81,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->title = $title;
     }
-
+    
     /**
      * Returns the message
      *
@@ -91,7 +91,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->message;
     }
-
+    
     /**
      * Sets the message
      *
@@ -102,7 +102,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->message = $message;
     }
-
+    
     /**
      * Returns the entrydate
      *
@@ -112,7 +112,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->entrydate;
     }
-
+    
     /**
      * Sets the entrydate
      *
@@ -123,7 +123,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->entrydate = $entrydate;
     }
-
+    
     /**
      * __construct
      */
@@ -132,7 +132,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         //Do not remove the next line: It would break the functionality
         $this->initStorageObjects();
     }
-
+    
     /**
      * Initializes all ObjectStorage properties
      * Do not modify this method!
@@ -145,7 +145,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->categories = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
-
+    
     /**
      * Adds a Category
      *
@@ -156,7 +156,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->categories->attach($category);
     }
-
+    
     /**
      * Removes a Category
      *
@@ -167,7 +167,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->categories->detach($categoryToRemove);
     }
-
+    
     /**
      * Returns the categories
      *
@@ -177,7 +177,7 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->categories;
     }
-
+    
     /**
      * Sets the categories
      *
