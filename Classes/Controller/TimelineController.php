@@ -39,28 +39,34 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      * @inject
      */
     protected $timelineRepository = NULL;
+	
+	
+    /**
+     * categoryRepository
+     *
+     * @var \TYPO3\CMS\Extbase\Domain\Repository\CategoryRepository
+     * @inject
+     */
+    protected $categoryRepository = NULL;
+	
     
     /**
      * action list
      *
      * @return void
      */
-	public function initializeAction() {
-        
+    public function initializeAction()
+    {
         // Nécessaire pour sauvegarder la date
         $arguments = array('newTimeline', 'timeline');
-        foreach( $arguments as $argument ) {
+        foreach ($arguments as $argument) {
             if ($this->arguments->hasArgument($argument)) {
                 // Change files properties type from string to array
-                $this->arguments->getArgument($argument)->getPropertyMappingConfiguration()->forProperty('entrydate')->setTypeConverterOption(
-                    'TYPO3\\CMS\\Extbase\\Property\\TypeConverter\\DateTimeConverter',
-                    \TYPO3\CMS\Extbase\Property\TypeConverter\DateTimeConverter::CONFIGURATION_DATE_FORMAT,
-                    'd/m/Y'
-                );
+                $this->arguments->getArgument($argument)->getPropertyMappingConfiguration()->forProperty('entrydate')->setTypeConverterOption('TYPO3\\CMS\\Extbase\\Property\\TypeConverter\\DateTimeConverter', \TYPO3\CMS\Extbase\Property\TypeConverter\DateTimeConverter::CONFIGURATION_DATE_FORMAT, 'd/m/Y');
             }
         }
-	}
-	
+    }
+    
     /**
      * action list
      *
@@ -80,7 +86,6 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function showAction(\Orbix\Mytimeline\Domain\Model\Timeline $timeline)
     {
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($timeline);
         $this->view->assign('timeline', $timeline);
     }
     
@@ -91,7 +96,9 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function newAction()
     {
-        
+		$categories = $this->categoryRepository->findAll();
+		$this->view->assign( 'categories', $categories );
+		//\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($categories);
     }
     
     /**
