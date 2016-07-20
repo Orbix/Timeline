@@ -7,7 +7,9 @@
 <label for="categories">
 	<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 </label><br />
-	<f:form.select name="categories" options="{categories}" optionValueField="uid" optionLabelField="title" value="{timeline.categories}" />
+	<f:form.select name="categories" options="{categories}" optionValueField="uid" optionLabelField="title" />
+
+	<f:debug>{montest}</f:debug>
 	
 <label for="message">
 	<f:translate key="tx_mytimeline_domain_model_timeline.message" />
