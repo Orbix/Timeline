@@ -123,7 +123,14 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function editAction(\Orbix\Mytimeline\Domain\Model\Timeline $timeline)
     {
+
+
+
         $this->view->assign('timeline', $timeline);
+
+        // Gestion des catégories dans le formulaire d'édition
+        $categories = $this->categoryRepository->findAll();
+        $this->view->assign( 'categories', $categories );
     }
     
     /**
