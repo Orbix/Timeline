@@ -2,20 +2,20 @@
 <label for="title">
 	<f:translate key="tx_mytimeline_domain_model_timeline.title" />
 </label><br />
-	<f:form.textfield property="title" /><br />
+<f:form.textfield property="title" /><br />
 
 <label for="categories">
 	<f:translate key="tx_mytimeline_domain_model_timeline.categories" />
 </label><br />
-	<f:form.select name="categories" options="{categories}" optionValueField="uid" optionLabelField="title" />
+<f:form.select multiple="1" name="categories" options="{categories}" optionValueField="uid" optionLabelField="title" value="{timeline.categories}" />
 
-	<f:debug>{montest}</f:debug>
-	
+<f:debug>{montest}</f:debug>
+
 <label for="message">
 	<f:translate key="tx_mytimeline_domain_model_timeline.message" />
 </label><br />
-	<f:form.textfield property="message" /><br />
+<f:form.textfield property="message" /><br />
 <label for="entrydate">
 	<f:translate key="tx_mytimeline_domain_model_timeline.entrydate" />
 </label><br />
-	<f:form.textfield property="entrydate"  value="{timeline.entrydate->f:format.date()}" /><br />
+<f:form.textfield property="entrydate"  value="{timeline.entrydate->f:format.date()}" /><br />
