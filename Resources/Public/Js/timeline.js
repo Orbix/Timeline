@@ -3,5 +3,5 @@
  */
 
 jQuery(function() {
-    $('#entrydate').datepicker();
+    $('#entrydate').datepicker("option", "dateFormat", 'd/m/Y');
 });
