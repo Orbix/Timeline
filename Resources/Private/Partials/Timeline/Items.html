@@ -4,12 +4,18 @@
         <f:if condition="{iterator.cycle} == 1">
             <f:then>
                 <li class="{category.title}_event active">
-                    <div class="event_icn icon-{category.title}"></div>
+
             </f:then>
             <f:else>
                 <li class="{category.title}_event">
                     <div class="event_icn icon-{category.title}"></div>
             </f:else>
+        </f:if>
+
+        <f:if condition="{category.title} == 'Football'">
+            <f:then>
+                <div class="event_icn fa fa-futbol-o"></div>
+            </f:then>
         </f:if>
     </f:for>
 
