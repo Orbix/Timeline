@@ -27,7 +27,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 	<f:for each="{timelines}" as="timeline">
 		<tr>
-			<td><f:link.action action="show" arguments="{timeline : timeline}"> {timeline.title}</f:link.action></td>
+			<td><f:link.action action="timeline" arguments="{timeline : timeline}"> {timeline.title}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{timeline : timeline}"> {timeline.entrydate -> f:format.date(format: 'd/m/Y')}</f:link.action></td>
 			<td><f:link.action action="edit" arguments="{timeline : timeline}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{timeline : timeline}">Delete</f:link.action></td>
