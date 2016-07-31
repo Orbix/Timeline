@@ -7,12 +7,12 @@ if (!defined('TYPO3_MODE')) {
 	'Orbix.' . $_EXTKEY,
 	'Mytimeline',
 	array(
-		'Timeline' => 'list, show, new, create, edit, update, delete, timeline',
+		'Timeline' => 'timeline, list, show, new, create, edit, update, delete',
 		
 	),
 	// non-cacheable actions
 	array(
-		'Timeline' => 'list, show, new, create, edit, update, delete, timeline',
+		'Timeline' => 'timeline, list, show, new, create, edit, update, delete',
 		
 	)
 );
