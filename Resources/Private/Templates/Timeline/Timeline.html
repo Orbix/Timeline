@@ -46,6 +46,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	</div> <!-- end of avtar circle header -->
 
 	<ul id="myevents">
+
+		<f:for each="{timelines}" as="timeline">
+			<f:render partial="Timeline/Items" arguments="{timeline:timeline, categories:categories}" />
+		</f:for>
+
 		<li class="custom_event active">
 			<div class="event_icn icon-custom"></div>
 			<div class="event_content ">
