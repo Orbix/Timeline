@@ -1,0 +1,39 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Timeline</h1>
+
+<f:flashMessages />
+
+<table  class="tx_mytimeline" >
+	<tr>
+		<th><f:translate key="tx_mytimeline_domain_model_timeline.title" /></th>
+		<th><f:translate key="tx_mytimeline_domain_model_timeline.entrydate" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{timelines}" as="timeline">
+		<tr>
+			<td><f:link.action action="timeline" arguments="{timeline : timeline}"> {timeline.title}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{timeline : timeline}"> {timeline.entrydate -> f:format.date(format: 'd/m/Y')}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{timeline : timeline}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{timeline : timeline}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Timeline</f:link.action>
+</f:section>
