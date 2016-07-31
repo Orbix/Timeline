@@ -12,7 +12,7 @@
     color:white;
 }
 
-.icon-ewen:before {
+.icon-ewen {
     background: url('typo3conf/ext/mytimeline/Resources/Public/Icons/icon-ewen.jpg');
 
     font-style: normal;
