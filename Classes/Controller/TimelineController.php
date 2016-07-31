@@ -93,12 +93,12 @@ class TimelineController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action timeline
      *
-     * @param \Orbix\Mytimeline\Domain\Model\Timeline $timeline
      * @return void
      */
-    public function timelineAction(\Orbix\Mytimeline\Domain\Model\Timeline $timeline)
+    public function timelineAction()
     {
-        $this->view->assign('timeline', $timeline);
+        $timelines = $this->timelineRepository->findAll();
+        $this->view->assign('timelines', $timelines);
     }
     
     /**
