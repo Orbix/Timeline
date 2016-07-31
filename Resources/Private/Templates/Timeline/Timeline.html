@@ -13,11 +13,360 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Timeline</h1>
 
-<f:flashMessages />
+	<header>
+		<nav>
+			<ul id="main_nav">
+				<li class="active all icon-all" data-title="all" title="All"></li>
+				<li class="icon-address active" data-title="life" title="Life Events">
+				</li>
+				<li class="icon-graduation-cap active" data-title="education" title="Education">
+				</li>
+				<li class="icon-briefcase active" data-title="work" title="Work">
+				</li>
+				<li class="icon-user active" data-title="user" title="Additional Info">
+				</li>
+				<li class="icon-custom active" data-title="custom" title="Custom">
+				</li>
+			</ul> <!-- end of #main_nav -->
+			<ul id="nav_ctrl">
+				<li class="icon-up-open" data-title="Next">
+				</li>
+				<li class="icon-down-open" data-title="Previous">
+				</li>
+			</ul> <!-- end of #nav_ctrl -->
+		</nav> <!-- end of nav -->
+	</header> <!-- end of Header -->
 
-<table  class="tx_mytimeline" >
+	<div class="header-image">
+		<figure id="user_image">
+			<img src="images/fablo.jpg" title="Fabienne et Loïc" alt="Fabienne et Loïc"/> <!-- change user image here-->
+		</figure>
+		<h1>Fabienne et Loïc <br/><span>Journal de bord</span> </h1>
+	</div> <!-- end of avtar circle header -->
+
+	<ul id="myevents">
+		<li class="custom_event active">
+			<div class="event_icn icon-custom"></div>
+			<div class="event_content ">
+				<h2>Fausse alerte</h2>
+				<p>
+					Alerte avec les analyses du jour (tension et protéine), go faire des analyses plus complètes avec le sac. <br />Fausse alerte, ce n'est pas pour aujourd'hui.
+				</p>
+
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>30/06/2016</p>
+			</div>
+		</li>
+
+		<li class="life_event">
+			<div class="event_icn icon-address"></div>
+			<div class="event_content">
+				<h2>Demi finale euro 2016</h2>
+				<p>
+					La France est en finale après une victoire 2-0 contre l'Allemagne. Énorme ! Prochain match contre le Portugal.
+				</p>
+
+
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+
+			</div>
+			<div class="event_date">
+				<p>07/07/2016</p>
+			</div>
+		</li>
+
+		<li class="education_event">
+			<div class="event_icn icon-graduation-cap"></div>
+			<div class="event_content">
+				<h2>Défaite cruelle !</h2>
+				<p>
+					Pas champion d'europe malgré une nette domination face au Portugal. Défaite 1-0 après prolongation !
+				</p>
+
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+
+			</div>
+			<div class="event_date">
+				<p>10/07/2016</p>
+			</div>
+		</li>
+
+		<li class="work_event">
+			<div class="event_icn icon-briefcase"></div>
+			<div class="event_content">
+				<h2>Ballade à la Gacilly et Rochefort-en-terre</h2>
+				<p>
+					Belle balade à la Gacilly et Rochefort-en-terre, voté comme plus beau village de France.
+				</p>
+
+				<hr class="hr-style1">
+
+						<span class="popup-gallery">
+							<a href="images/gacilly/gacilly-001.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-001.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-002.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-002.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-003.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-003.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-004.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-004.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-005.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-005.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-006.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-006.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-007.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-007.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-008.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-008.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-009.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-009.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-010.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-010.jpg" width="65" height="65">
+							</a>
+
+							<a href="images/gacilly/gacilly-011.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-011.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-012.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-012.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-013.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-013.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-014.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-014.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-015.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-015.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-016.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-016.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-017.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-017.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-018.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-018.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-019.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-019.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-020.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-020.jpg" width="65" height="65">
+							</a>
+
+							<a href="images/gacilly/gacilly-021.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-021.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-022.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-022.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-023.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-023.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-024.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-024.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-025.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-025.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-026.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-026.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-027.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-027.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-028.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-028.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-029.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-029.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-030.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-030.jpg" width="65" height="65">
+							</a>
+
+							<a href="images/gacilly/gacilly-031.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-031.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-032.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-032.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-033.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-033.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-034.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-034.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-035.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-035.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-036.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-036.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-037.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-037.jpg" width="65" height="65">
+							</a>
+							<a href="images/gacilly/gacilly-038.jpg" title="gacilly">
+								<img src="images/gacilly/gacilly-038.jpg" width="65" height="65">
+							</a>
+
+						</span>
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>11/07/2016</p>
+			</div>
+		</li>
+
+		<li class="work_event">
+			<div class="event_icn icon-briefcase"></div>
+			<div class="event_content">
+				<h2>Panneaux de bois</h2>
+				<p>
+					Installation des panneaux de bois sous le cagnar. Le rendu visuel est plutôt joli.
+				</p>
+
+				<hr class="hr-style1">
+
+						<span class="popup-gallery">
+							<a href="images/nature/nature1.jpg" title="nature">
+								<img src="images/nature/nature1.jpg" width="65" height="65">
+							</a>
+							<a href="images/nature/nature2.jpg" title="nature">
+								<img src="images/nature/nature2.jpg" width="65" height="65">
+							</a>
+							<a href="images/nature/nature3.jpg" title="nature">
+								<img src="images/nature/nature3.jpg" width="65" height="65">
+							</a>
+
+						</span>
+
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>16/07/2016</p>
+			</div>
+		</li>
+
+		<li class="life_event">
+			<div class="event_icn icon-address"></div>
+			<div class="event_content">
+				<h2>Urgence !</h2>
+				<p>
+					Ewen semble vouloir venir, nous nous dirigeons aux urgences de la clinique. Les contractions arrivent toutes les 2 minutes voire toutes les minutes
+				</p>
+
+				<hr class="hr-style1">
+
+						<span class="popup-gallery">
+							<a href="images/ewen/urgence.jpg" title="urgence">
+								<img src="images/ewen/urgence.jpg" width="65" height="65">
+							</a>
+						</span>
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>16/07/2016</p>
+			</div>
+		</li>
+
+		<li class="work_event">
+			<div class="event_icn icon-briefcase"></div>
+			<div class="event_content">
+				<h2>Le travail est en cours</h2>
+				<p>
+					Rentré à 20h30 à la clinique. Col 2cm. 23h : 3cm
+				</p>
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>17/07/2016</p>
+			</div>
+		</li>
+
+		<li class="education_event">
+			<div class="event_icn icon-graduation-cap"></div>
+			<div class="event_content">
+				<h2>Bonjour Ewen</h2>
+				<p>
+					Ewen est arrivé pour notre plus grand bonheur à 15h33. 3,880kg pour 53cm. Tout s'est bien passé, Fabienne va bien. La fin du travail a été un peu longue (plus de 40min et une déchirure du périné). Ewen ressemble plus à Fabienne, a beaucoup de cheveux
+				</p>
+
+				<hr class="hr-style1">
+
+						<span class="popup-gallery">
+							<a href="images/ewen/first.jpg" title="Ewen">
+								<img src="images/ewen/first.jpg" width="65" height="65">
+							</a>
+							<a href="images/ewen/ewen1.jpg" title="Ewen">
+								<img src="images/ewen/ewen1.jpg" width="65" height="65">
+							</a>
+							<a href="images/ewen/ewen2.jpg" title="Ewen">
+								<img src="images/ewen/ewen2.jpg" width="65" height="65">
+							</a>
+							<a href="images/ewen/ewen3.jpg" title="Ewen">
+								<img src="images/ewen/ewen3.jpg" width="65" height="65">
+							</a>
+							<a href="images/ewen/ewen4.jpg" title="Ewen">
+								<img src="images/ewen/ewen4.jpg" width="65" height="65">
+							</a>
+						</span>
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+			</div>
+			<div class="event_date">
+				<p>17/07/2016</p>
+			</div>
+		</li>
+
+		<li class="life_event">
+			<div class="event_icn icon-address"></div>
+			<div class="event_content">
+				<h2>Retour à la maison</h2>
+				<p>
+					Message	Retour à la maison pour Fabienne, découverte pour Ewen et rencontre avec cookie qui est tout foufou à vouloir lécher Ewen
+				</p>
+				<hr class="hr-style1">
+
+				<p><a href="#m" class="MT-readmore">Read more</a></p>
+			</div>
+			<div class="event_date">
+				<p>21/07/2016</p>
+			</div>
+		</li>
+
+	</ul> <!-- end of #Myevent  -->
+
+
+
+	<table  class="tx_mytimeline" >
 	<tr>
 		<th><f:translate key="tx_mytimeline_domain_model_timeline.title" /></th>
 		<th><f:translate key="tx_mytimeline_domain_model_timeline.entrydate" /></th>
