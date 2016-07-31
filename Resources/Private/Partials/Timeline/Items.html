@@ -1,5 +1,13 @@
-<f:for each="{timelines}" as="timeline">
-    <li class="custom_event active">
+<f:for each="{timelines}" as="timeline" iteration="iterator">
+    <f:if condition="{iterator.cycle} == 1">
+        <f:then>
+            <li class="custom_event active">
+        </f:then>
+        <f:else>
+            <li class="custom_event">
+        </f:else>
+    </f:if>
+
         <div class="event_icn icon-custom"></div>
         <div class="event_content ">
             <h2>{timeline.title}</h2>
