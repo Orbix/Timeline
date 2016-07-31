@@ -34,7 +34,7 @@
 }
 
 #myevents>li div.event_icn.icon-ewen {
-    margin-left:0;
+    margin-left:-18px;
 }
 
 #timeline_container>header nav li.icon-ewen:hover {
