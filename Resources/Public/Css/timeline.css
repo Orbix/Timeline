@@ -12,9 +12,14 @@
     color:white;
 }
 
+li.icon-ewen {
+    width:40px;
+    height:40px;
+    vertical-align: bottom;
+}
+
 .icon-ewen {
     background: url('/typo3conf/ext/mytimeline/Resources/Public/Icons/icon-ewen-big.jpg');
-
     font-style: normal;
     font-weight: 400;
     display: inline-block;
