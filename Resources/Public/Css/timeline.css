@@ -4,3 +4,10 @@
     background-color:grey;
     color:black;
 }
+
+#myevents>li div.event_icn.icon-map,
+#timeline_container>header nav li.fa-map-marker.active,
+#timeline_container>header nav li.fa-map-marker:active {
+    background-color:yellowgreen;
+    color:white;
+}
