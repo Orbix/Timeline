@@ -31,3 +31,7 @@ li.icon-ewen {
     line-height: 1em;
     margin-left: .2em;
 }
+
+#timeline_container>header nav li.icon-ewen:hover {
+    background-color: transparent;
+}
