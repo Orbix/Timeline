@@ -34,6 +34,10 @@
     margin-left: .2em;
 }
 
+#myevents>li div.event_icn.icon-ewen {
+    margin-left:0;
+}
+
 #timeline_container>header nav li.icon-ewen:hover {
     background-color: transparent;
     background: url('/typo3conf/ext/mytimeline/Resources/Public/Icons/icon-ewen-big.jpg');
