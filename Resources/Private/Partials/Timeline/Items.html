@@ -10,7 +10,11 @@
 
         <div class="event_icn icon-custom"></div>
         <div class="event_content ">
-            <h2>{timeline.title} - {timeline.categories}</h2>
+            <h2>{timeline.title}
+                <f:for each="{timeline.categories}" as="category">
+                    {category.title}
+                </f:for>
+            </h2>
             <p>
                 {timeline.message}
             </p>
