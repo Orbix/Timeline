@@ -3,7 +3,7 @@
     <div class="event_content ">
         <h2>{timeline.title}</h2>
         <p>
-            Alerte avec les analyses du jour (tension et protéine), go faire des analyses plus complètes avec le sac. <br />Fausse alerte, ce n'est pas pour aujourd'hui.
+            {timeline.message}
         </p>
 
         <hr class="hr-style1">
@@ -11,6 +11,6 @@
         <p><a href="#m" class="MT-readmore">Lire la suite</a></p>
     </div>
     <div class="event_date">
-        <p>30/06/2016</p>
+        <p>{timeline.entrydate -> f:format.date(format: 'd/m/Y')}</p>
     </div>
 </li>
