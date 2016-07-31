@@ -1,3 +1,8 @@
+#timeline_container>header nav li.fa-futbol-o {
+    width:40px;
+    height:40px;
+}
+
 #timeline_container>header nav li.fa-futbol-o.active, #timeline_container>header nav li.fa-futbol-o:active {
     background-color:grey;
     color:black;
