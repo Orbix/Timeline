@@ -11,3 +11,18 @@
     background-color:yellowgreen;
     color:white;
 }
+
+.icon-ewen:before {
+    background: url('typo3conf/ext/mytimeline/Resources/Public/Icons/icon-ewen.jpg');
+
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.2em;
+    margin-right: .1em;
+    text-align: center;
+    opacity: .9;
+    line-height: 1em;
+    margin-left: .2em;
+}
