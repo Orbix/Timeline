@@ -12,11 +12,11 @@
             </f:else>
         </f:if>
 
-        <f:if condition="{category.title} == 'Football'">
-            <f:then>
-                <div class="event_icn fa fa-futbol-o"></div>
-            </f:then>
-        </f:if>
+        <f:switch expression="{category.title}">
+            <f:case value="Football"><div class="event_icn fa fa-futbol-o"></div></f:case>
+            <f:case value="Balades"><div class="event_icn fa fa-blind"></div></f:case>
+            <f:case default="TRUE"><div class="event_icn icon-custom"></div></f:case>
+        </f:switch>
     </f:for>
 
 
