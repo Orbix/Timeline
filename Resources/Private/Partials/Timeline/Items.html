@@ -4,14 +4,16 @@
         <f:if condition="{iterator.cycle} == 1">
             <f:then>
                 <li class="{category.title}_event active">
+                    <div class="event_icn icon-{category.title}"></div>
             </f:then>
             <f:else>
                 <li class="{category.title}_event">
+                    <div class="event_icn icon-{category.title}"></div>
             </f:else>
         </f:if>
     </f:for>
 
-        <div class="event_icn icon-custom"></div>
+
         <div class="event_content ">
             <h2>{timeline.title}</h2>
             <p>
