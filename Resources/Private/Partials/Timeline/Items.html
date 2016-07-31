@@ -1,16 +1,18 @@
-<li class="custom_event active">
-    <div class="event_icn icon-custom"></div>
-    <div class="event_content ">
-        <h2>{timeline.title}</h2>
-        <p>
-            {timeline.message}
-        </p>
+<f:for each="{timelines}" as="timeline">
+    <li class="custom_event active">
+        <div class="event_icn icon-custom"></div>
+        <div class="event_content ">
+            <h2>{timeline.title}</h2>
+            <p>
+                {timeline.message}
+            </p>
 
-        <hr class="hr-style1">
+            <hr class="hr-style1">
 
-        <p><a href="#m" class="MT-readmore">Lire la suite</a></p>
-    </div>
-    <div class="event_date">
-        <p>{timeline.entrydate -> f:format.date(format: 'd/m/Y')}</p>
-    </div>
-</li>
+            <p><a href="#m" class="MT-readmore">Lire la suite</a></p>
+        </div>
+        <div class="event_date">
+            <p>{timeline.entrydate -> f:format.date(format: 'd/m/Y')}</p>
+        </div>
+    </li>
+</f:for>
