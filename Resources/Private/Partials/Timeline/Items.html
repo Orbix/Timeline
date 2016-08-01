@@ -1,5 +1,5 @@
 <f:for each="{timelines}" as="timeline" iteration="iterator">
-
+    <f:debug>{timeline.files}</f:debug>
     <f:for each="{timeline.categories}" as="category">
         <f:if condition="{iterator.cycle} == 1">
             <f:then>

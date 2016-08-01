@@ -60,7 +60,14 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @cascade remove
      */
     protected $categories = null;
-    
+
+    /**
+     * files
+     *
+     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+     */
+    protected $files = null;
+
     /**
      * Returns the title
      *
@@ -187,6 +194,27 @@ class Timeline extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setCategories(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $categories)
     {
         $this->categories = $categories;
+    }
+
+    /**
+     * Returns the files
+     *
+     * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $files
+     */
+    public function getFiles()
+    {
+        return $this->files;
+    }
+
+    /**
+     * Sets the files
+     *
+     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $files
+     * @return void
+     */
+    public function setFiles(\TYPO3\CMS\Extbase\Domain\Model\FileReference $files)
+    {
+        $this->files = $files;
     }
 
 }
