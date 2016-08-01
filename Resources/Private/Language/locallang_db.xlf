@@ -18,6 +18,9 @@
 			<trans-unit id="tx_mytimeline_domain_model_timeline.categories">
 				<source>Categories</source>
 			</trans-unit>
+			<trans-unit id="tx_mytimeline_domain_model_timeline.files">
+				<source>Fichiers</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
