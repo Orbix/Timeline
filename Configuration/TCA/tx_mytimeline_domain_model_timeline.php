@@ -227,8 +227,7 @@ return array(
 							--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
 							--palette--;;filePalette'
 						)
-					),
-					'maxitems' => 1
+					)
 				)
 			),
 		),
